@@ -15,11 +15,13 @@
     <div class="container">
       <h1>Please fill up the form below</h1>
       <div>
+
         <form id = "formOne">
           <div class = 'form-group'> <!--creates a regular form field-->
             <label for="name">Enter your name</label>
             <input id="name" class="form-control" type="text">
           </div>
+
           <div class="form-group"> <!--creates a date form-->
             <label for="dob">Select your DOB</label>
             <input id="dob" class="form-control" type="date">
@@ -27,49 +29,57 @@
           
           <lable for = "books"><strong>Choose your favourite book</strong></lable>
           <select class="form-control" id="books"> <!--creates a dropdown-->
-            
             <option>How to analyze people</option>
             <option>Harry Potter</option>
             <option>Less</option>
             <option>Howl's moving Castle</option>
-            <!--<label for="books">Select your favorite book</label>-->
           </select>
 
-          <div class="form-group">
-            <label for="date">Enter the appointment date</label>
-            <input id="date" class="form-control" type="text">
+          <label for = "radio"><strong>Choose your favorite music style</strong></label> <!--section with radio-buttons-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="heavymetal" checked>
+              Heavy-metal
+            </label>
           </div>
-          <div class="form-group">
-            <label for="start">Enter the start time</label>
-            <input id="start" class="form-control" type="text">
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="rock&roll">
+              Rock & Roll
+            </label>
           </div>
-          <div class="form-group">
-            <label for="end">Enter the end time</label>
-            <input id="end" class="form-control" type="text">
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="dark cabare">
+              Dark cabare
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="psychobilly">
+              Psychobilly
+            </label>
           </div>
 
+          <div class="form-group"> <!--section for choosing favorite colors-->
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          
           <!--<button type="submit" class="btn">Result</button>-->
           <!--<button type="button" data-toggle="modal" data-target="#myModal" id="myBtn">Submit</button>-->
-          <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
+          <button type="submit" class="btn btn-info btn-lg" id="myBtn">Submit</button>
         </form>
 
+        <!--<div id = "output"></div>-->
+
+        <div id="aboutYou">
+          <h1>Some information about you!</h1>
+          <p>
+          Your name is <span class="fullname"></span>. Your DOB is <span class="birth"></span>. Your favourite book - <span class="favoriteBook"></span>. Favourite music style - <span class="musicStyle"></span>", favourite color is <span class="favoriteColor"></span>.
+          </p>
+        </div>
+
       </div>
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Your Result</h4>
-            </div>
-            <div class="modal-body">
-              <p><strong>Booking successfull!!!</strong></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-    </div>
   </body>
 </html>      
